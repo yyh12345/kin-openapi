@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/yyh12345/kin-openapi/openapi3"
 )
 
 //go:embed testdata/circularRef/*

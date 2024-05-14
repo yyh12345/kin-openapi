@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/getkin/kin-openapi/openapi3gen"
+	"github.com/yyh12345/kin-openapi/openapi3gen"
 )
 
 type (

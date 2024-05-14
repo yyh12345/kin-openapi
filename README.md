@@ -1,18 +1,18 @@
-[![CI](https://github.com/getkin/kin-openapi/workflows/go/badge.svg)](https://github.com/getkin/kin-openapi/actions)
-[![Go Report Card](https://goreportcard.com/badge/github.com/getkin/kin-openapi)](https://goreportcard.com/report/github.com/getkin/kin-openapi)
-[![GoDoc](https://godoc.org/github.com/getkin/kin-openapi?status.svg)](https://godoc.org/github.com/getkin/kin-openapi)
+[![CI](https://github.com/yyh12345/kin-openapi/workflows/go/badge.svg)](https://github.com/yyh12345/kin-openapi/actions)
+[![Go Report Card](https://goreportcard.com/badge/github.com/yyh12345/kin-openapi)](https://goreportcard.com/report/github.com/yyh12345/kin-openapi)
+[![GoDoc](https://godoc.org/github.com/yyh12345/kin-openapi?status.svg)](https://godoc.org/github.com/yyh12345/kin-openapi)
 [![Join Gitter Chat Channel -](https://badges.gitter.im/getkin/kin.svg)](https://gitter.im/getkin/kin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # Introduction
 A [Go](https://golang.org) project for handling [OpenAPI](https://www.openapis.org/) files. We target:
 * [OpenAPI `v2.0`](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md) (formerly known as Swagger)
 * [OpenAPI `v3.0`](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.3.md)
-* [OpenAPI `v3.1`](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md) Soon! [Tracking issue here.](https://github.com/getkin/kin-openapi/issues/230)
+* [OpenAPI `v3.1`](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md) Soon! [Tracking issue here.](https://github.com/yyh12345/kin-openapi/issues/230)
 
 Licensed under the [MIT License](./LICENSE).
 
 ## Contributors, users and sponsors
-The project has received pull requests [from many people](https://github.com/getkin/kin-openapi/graphs/contributors). Thanks to everyone!
+The project has received pull requests [from many people](https://github.com/yyh12345/kin-openapi/graphs/contributors). Thanks to everyone!
 
 Be sure to [give back to this project](https://github.com/sponsors/fenollp) like our sponsors:
 
@@ -38,7 +38,7 @@ Here's some projects that depend on _kin-openapi_:
   * [gitlab.com/jamietanna/httptest-openapi](https://gitlab.com/jamietanna/httptest-openapi) ([*blog post*](https://www.jvt.me/posts/2022/05/22/go-openapi-contract-test/)) - "Go OpenAPI Contract Verification for use with `net/http`"
   * [github.com/SIMITGROUP/openapigenerator](https://github.com/SIMITGROUP/openapigenerator) - "Openapi v3 microservices generator"
   * [https://github.com/projectsveltos/addon-controller](https://github.com/projectsveltos/addon-controller) - "Kubernetes add-on controller designed to manage tens of clusters."
-  * (Feel free to add your project by [creating an issue](https://github.com/getkin/kin-openapi/issues/new) or a pull request)
+  * (Feel free to add your project by [creating an issue](https://github.com/yyh12345/kin-openapi/issues/new) or a pull request)
 
 ## Alternatives
 * [go-swagger](https://github.com/go-swagger/go-swagger) stated [*OpenAPIv3 won't be supported*](https://github.com/go-swagger/go-swagger/issues/1122#issuecomment-575968499)
@@ -50,22 +50,22 @@ Here's some projects that depend on _kin-openapi_:
 Be sure to check [OpenAPI Initiative](https://github.com/OAI)'s [great tooling list](https://github.com/OAI/OpenAPI-Specification/blob/master/IMPLEMENTATIONS.md) as well as [OpenAPI.Tools](https://openapi.tools/).
 
 # Structure
-  * _openapi2_ ([godoc](https://godoc.org/github.com/getkin/kin-openapi/openapi2))
+  * _openapi2_ ([godoc](https://godoc.org/github.com/yyh12345/kin-openapi/openapi2))
     * Support for OpenAPI 2 files, including serialization, deserialization, and validation.
-  * _openapi2conv_ ([godoc](https://godoc.org/github.com/getkin/kin-openapi/openapi2conv))
+  * _openapi2conv_ ([godoc](https://godoc.org/github.com/yyh12345/kin-openapi/openapi2conv))
     * Converts OpenAPI 2 files into OpenAPI 3 files.
-  * _openapi3_ ([godoc](https://godoc.org/github.com/getkin/kin-openapi/openapi3))
+  * _openapi3_ ([godoc](https://godoc.org/github.com/yyh12345/kin-openapi/openapi3))
     * Support for OpenAPI 3 files, including serialization, deserialization, and validation.
-  * _openapi3filter_ ([godoc](https://godoc.org/github.com/getkin/kin-openapi/openapi3filter))
+  * _openapi3filter_ ([godoc](https://godoc.org/github.com/yyh12345/kin-openapi/openapi3filter))
     * Validates HTTP requests and responses
     * Provides a [gorilla/mux](https://github.com/gorilla/mux) router for OpenAPI operations
-  * _openapi3gen_ ([godoc](https://godoc.org/github.com/getkin/kin-openapi/openapi3gen))
+  * _openapi3gen_ ([godoc](https://godoc.org/github.com/yyh12345/kin-openapi/openapi3gen))
     * Generates `*openapi3.Schema` values for Go types.
 
 # Some recipes
 ## Validating an OpenAPI document
 ```shell
-go run github.com/getkin/kin-openapi/cmd/validate@latest [--circular] [--defaults] [--examples] [--ext] [--patterns] -- <local YAML or JSON file>
+go run github.com/yyh12345/kin-openapi/cmd/validate@latest [--circular] [--defaults] [--examples] [--ext] [--patterns] -- <local YAML or JSON file>
 ```
 
 ## Loading OpenAPI document
@@ -94,9 +94,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/getkin/kin-openapi/openapi3"
-	"github.com/getkin/kin-openapi/openapi3filter"
-	"github.com/getkin/kin-openapi/routers/gorillamux"
+	"github.com/yyh12345/kin-openapi/openapi3"
+	"github.com/yyh12345/kin-openapi/openapi3filter"
+	"github.com/yyh12345/kin-openapi/routers/gorillamux"
 )
 
 func main() {
@@ -330,7 +330,7 @@ This will change the schema validation errors to return only the `Reason` field,
 * Renamed `routers.Route.Swagger` to `routers.Route.Spec`.
 
 ### v0.51.0
-* Type `openapi3filter.Route` moved to `routers` (and `Route.Handler` was dropped. See https://github.com/getkin/kin-openapi/issues/329)
+* Type `openapi3filter.Route` moved to `routers` (and `Route.Handler` was dropped. See https://github.com/yyh12345/kin-openapi/issues/329)
 * Type `openapi3filter.RouteError` moved to `routers` (so did `ErrPathNotFound` and `ErrMethodNotAllowed` which are now `RouteError`s)
 * Routers' `FindRoute(...)` method now takes only one argument: `*http.Request`
 * `getkin/kin-openapi/openapi3filter.Router` moved to `getkin/kin-openapi/routers/legacy`

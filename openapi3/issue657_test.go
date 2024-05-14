@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/yyh12345/kin-openapi/openapi3"
 )
 
 func TestOneOf_Warning_Errors(t *testing.T) {

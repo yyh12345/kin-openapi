@@ -1,4 +1,4 @@
-package pathpattern // import "github.com/getkin/kin-openapi/routers/legacy/pathpattern"
+package pathpattern // import "github.com/yyh12345/kin-openapi/routers/legacy/pathpattern"
 
 Package pathpattern implements path matching.
 

@@ -6,9 +6,9 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/getkin/kin-openapi/openapi3"
-	"github.com/getkin/kin-openapi/openapi3gen"
-	"github.com/getkin/kin-openapi/openapi3gen/internal/subpkg"
+	"github.com/yyh12345/kin-openapi/openapi3"
+	"github.com/yyh12345/kin-openapi/openapi3gen"
+	"github.com/yyh12345/kin-openapi/openapi3gen/internal/subpkg"
 )
 
 // Make sure that custom schema name generator is employed and results produced with it are properly used

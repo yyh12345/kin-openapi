@@ -1,4 +1,4 @@
-module github.com/getkin/kin-openapi
+module github.com/yyh12345/kin-openapi
 
 go 1.20
 

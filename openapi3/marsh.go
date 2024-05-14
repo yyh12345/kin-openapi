@@ -17,7 +17,7 @@ func unmarshalError(jsonUnmarshalErr error) error {
 }
 
 func unmarshal(data []byte, v interface{}) error {
-	// See https://github.com/getkin/kin-openapi/issues/680
+	// See https://github.com/yyh12345/kin-openapi/issues/680
 	if err := json.Unmarshal(data, v); err != nil {
 		// UnmarshalStrict(data, v) TODO: investigate how ymlv3 handles duplicate map keys
 		return yaml.Unmarshal(data, v)

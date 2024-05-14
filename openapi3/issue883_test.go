@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/require"
 	v3 "gopkg.in/yaml.v3"
 
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/yyh12345/kin-openapi/openapi3"
 )
 
 func TestIssue883(t *testing.T) {

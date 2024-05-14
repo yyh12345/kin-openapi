@@ -155,7 +155,7 @@ func TestIssue735(t *testing.T) {
 			value:            map[string]interface{}{"foo": 42},
 			extraNotContains: []interface{}{42},
 		},
-		// TODO: uncomment when https://github.com/getkin/kin-openapi/issues/502 is fixed
+		// TODO: uncomment when https://github.com/yyh12345/kin-openapi/issues/502 is fixed
 		//{
 		//	name: "read only properties",
 		//	schema: NewSchema().WithProperties(map[string]*Schema{

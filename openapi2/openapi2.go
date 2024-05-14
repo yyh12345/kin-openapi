@@ -3,7 +3,7 @@ package openapi2
 import (
 	"encoding/json"
 
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/yyh12345/kin-openapi/openapi3"
 )
 
 // T is the root of an OpenAPI v2 document

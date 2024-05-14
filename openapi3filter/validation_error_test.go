@@ -11,8 +11,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/getkin/kin-openapi/openapi3"
-	"github.com/getkin/kin-openapi/routers"
+	"github.com/yyh12345/kin-openapi/openapi3"
+	"github.com/yyh12345/kin-openapi/routers"
 )
 
 func newPetstoreRequest(t *testing.T, method, path string, body io.Reader) *http.Request {
